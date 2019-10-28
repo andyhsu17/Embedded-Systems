@@ -1,0 +1,5 @@
+# FIXED
+
+driverlib/fpu_simple_floating_point_operation/fpu_simple_floating_point_operation.obj: ../driverlib/fpu_simple_floating_point_operation/fpu_simple_floating_point_operation.c
+
+../driverlib/fpu_simple_floating_point_operation/fpu_simple_floating_point_operation.c: 

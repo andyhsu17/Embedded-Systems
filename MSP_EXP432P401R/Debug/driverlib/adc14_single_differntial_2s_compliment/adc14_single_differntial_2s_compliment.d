@@ -1,0 +1,5 @@
+# FIXED
+
+driverlib/adc14_single_differntial_2s_compliment/adc14_single_differntial_2s_compliment.obj: ../driverlib/adc14_single_differntial_2s_compliment/adc14_single_differntial_2s_compliment.c
+
+../driverlib/adc14_single_differntial_2s_compliment/adc14_single_differntial_2s_compliment.c: 

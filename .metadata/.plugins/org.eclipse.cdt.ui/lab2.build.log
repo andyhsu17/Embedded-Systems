@@ -1,0 +1,7 @@
+
+**** Build of configuration Debug for project lab2 ****
+
+/Applications/ti/ccsv7/utils/bin/gmake -k -j 3 all -O 
+gmake[1]: 'lab2.out' is up to date.
+
+**** Build Finished ****

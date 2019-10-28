@@ -1,0 +1,7 @@
+
+**** Build of configuration Debug for project I2C Example ****
+
+/Applications/ti/ccsv7/utils/bin/gmake -k -j 3 all -O 
+gmake[1]: 'I2C Example.out' is up to date.
+
+**** Build Finished ****

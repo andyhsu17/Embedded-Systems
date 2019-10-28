@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectSpec>
+    <applicability>
+        <when>
+            <context
+                deviceFamily="MSP432"
+                deviceId="MSP432P401R"
+            />
+        </when>
+    </applicability>
+
+
+    <project
+        title="NVS UART Example"
+        name="nvsuart_MSP_EXP432P401R_nortos_gcc"
+        toolChain="GNU"
+        connection="TIXDS110_Connection.xml"
+        device="MSP432P401R"
+        ignoreDefaultDeviceSettings="true"
+        products="com.ti.SIMPLELINK_MSP432_SDK"
+        compilerBuildOptions=" -I${PROJECT_ROOT} -I${COM_TI_SIMPLELINK_MSP432_SDK_INSTALL_DIR}/source -I${COM_TI_SIMPLELINK_MSP432_SDK_INSTALL_DIR}/source/third_party/CMSIS/Include -DDeviceFamily_MSP432P401x -I${COM_TI_SIMPLELINK_MSP432_SDK_INSTALL_DIR}/kernel/nortos -I${COM_TI_SIMPLELINK_MSP432_SDK_INSTALL_DIR}/kernel/nortos/posix -mcpu=cortex-m4 -march=armv7e-m -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -ffunction-sections -fdata-sections -g -gstrict-dwarf -Wall -I${CG_TOOL_ROOT}/arm-none-eabi/include/newlib-nano"
+        linkerBuildOptions=" -nostartfiles -L${COM_TI_SIMPLELINK_MSP432_SDK_INSTALL_DIR}/source/ti/display/lib -l:display.am4fg -L${COM_TI_SIMPLELINK_MSP432_SDK_INSTALL_DIR}/source/ti/drivers/lib -l:drivers_msp432p401x.am4fg -L${COM_TI_SIMPLELINK_MSP432_SDK_INSTALL_DIR}/source/third_party/fatfs/lib -l:fatfs.am4fg -eresetISR -L${COM_TI_SIMPLELINK_MSP432_SDK_INSTALL_DIR}/kernel/nortos/lib -l:nortos_msp432p401x.am4fg -L${COM_TI_SIMPLELINK_MSP432_SDK_INSTALL_DIR}/source/ti/devices/msp432p4xx/driverlib/gcc -l:msp432p4xx_driverlib.a -march=armv7e-m -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -static -Wl,--gc-sections -L${CG_TOOL_ROOT}/arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard -lgcc -lc -lm -lnosys --specs=nano.specs"
+        description="Example to read and write data into non-volatile storage using the NVS driver. UART used for user input. ">
+
+        <property name="buildProfile" value="release"/>
+        <property name="isHybrid" value="true"/>
+        <group id="nvsuart.SIMPLELINK_MSP432_SDK.MSP_EXP432P401R.drivers.GCC"/>
+        <file path="../main_nortos.c" openOnCreation="false" excludeFromBuild="false" action="copy">
+        </file>
+        <file path="../README.md" openOnCreation="false" excludeFromBuild="false" action="copy">
+        </file>
+        <file path="../nvsuart.c" openOnCreation="false" excludeFromBuild="false" action="copy">
+        </file>
+        <file path="../README.html" openOnCreation="false" excludeFromBuild="false" action="copy">
+        </file>
+        <file path="../Board.h" openOnCreation="false" excludeFromBuild="false" action="copy">
+        </file>
+        <file path="../MSP_EXP432P401R.c" openOnCreation="false" excludeFromBuild="false" action="copy">
+        </file>
+        <file path="../MSP_EXP432P401R.h" openOnCreation="false" excludeFromBuild="false" action="copy">
+        </file>
+        <file path="../gcc/MSP_EXP432P401R_NoRTOS.lds" openOnCreation="false" excludeFromBuild="false" action="copy">
+        </file>
+        <file path="${COM_TI_SIMPLELINK_MSP432_SDK_INSTALL_DIR}/source/ti/boards/MSP_EXP432P401R/Board.html" openOnCreation="false" excludeFromBuild="false" action="link">
+        </file>
+    </project>
+</projectSpec>
+

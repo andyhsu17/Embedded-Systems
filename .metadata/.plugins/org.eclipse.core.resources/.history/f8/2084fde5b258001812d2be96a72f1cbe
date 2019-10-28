@@ -1,0 +1,55 @@
+#include "msp.h"
+#include "msp432p401r.h"
+#include "msp432.h"
+
+/**
+ * main.c
+
+ */
+void main(void)
+{
+
+	WDT_A->CTL = WDT_A_CTL_PW | WDT_A_CTL_HOLD;		// stop watchdog timer
+	volatile int i = 0;
+	//configure led 1, led2.0, 2.1, 2.2 as output
+	 P1->DIR |= BIT0;
+	    P2->DIR |= BIT0;
+	    P2->DIR |= BIT1;
+	     P2->DIR |= BIT2;
+//set led1 low and red, green, blue led as low
+	 P1->OUT &= ~BIT0;
+	    P2->OUT &= ~BIT0;
+	     P2->OUT &= ~BIT1;
+	     P2->OUT &= ~BIT2;
+
+	     //set button 1 and 2 as input and pull down resistor
+	     P1->DIR &= ~BIT1;
+	     P1->REN |= BIT1;
+	     P1->OUT |= BIT1;
+	     P1->DIR &= ~BIT4;
+	     P1->REN |= BIT4;
+	     P1->OUT |= BIT4;
+
+while(1)
+{
+    int button1 = P1->IN & BIT1;
+    int button2 = P1->IN & BIT4;
+    if(button1)
+    {
+    P1->OUT &= ~BIT0;
+    }
+    else if(!button1){
+        P1->OUT |= BIT0;
+    }
+    else if(button2)
+	{
+	    P2->OUT &= ~BIT0;
+	}
+    else if(!button2)
+    {
+        P2->OUT |= BIT0;
+    }
+    }
+
+}
+}

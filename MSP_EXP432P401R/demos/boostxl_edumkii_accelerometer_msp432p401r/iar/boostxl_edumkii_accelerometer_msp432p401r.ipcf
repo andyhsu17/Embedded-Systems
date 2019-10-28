@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IAR Project Connection File -->
+
+<iarProjectConnection version="1.2" name="boostxl_edumkII_accelerometer_msp432p401r" oneShot="true"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="IarProjectConnection_1.2.xsd">
+
+  <device>
+    <name>MSP432P401R</name>
+  </device>
+
+  <extraOptions>
+    <args>
+      <arg>-I$PROJ_DIR$</arg>
+      <arg>-I$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/source</arg>
+      <arg>-I$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/source/third_party/CMSIS/Include</arg>
+      <arg>-D__MSP432P401R__</arg>
+      <arg>-DDeviceFamily_MSP432P401x</arg>
+      <arg>--debug</arg>
+      <arg>--silent</arg>
+      <arg>-e</arg>
+      <arg>--aeabi</arg>
+      <arg>--thumb</arg>
+      <arg>--diag_suppress=Pa050</arg>
+    </args>
+  </extraOptions>
+
+  <linkerFile>
+    <override>true</override>
+    <path>$PROJ_DIR$/$PROJ_FNAME$_msp432p401r.icf</path>
+  </linkerFile>
+
+  <linkerExtraOptions>
+    <args>
+      <arg>$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/source/ti/grlib/iar/grlib.a</arg>
+      <arg>$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/source/ti/display/lib/display.arm4f</arg>
+      <arg>$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/source/ti/drivers/lib/drivers_msp432p401x.arm4f</arg>
+      <arg>$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/source/third_party/fatfs/lib/fatfs.arm4f</arg>
+      <arg>$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/source/ti/devices/msp432p4xx/driverlib/iar/msp432p4xx_driverlib.a</arg>
+      <arg>--silent</arg>
+      <arg>--cpu=Cortex-M4F</arg>
+      <arg>--redirect</arg>
+      <arg>_Printf=_PrintfSmall</arg>
+      <arg>--redirect</arg>
+      <arg>_Scanf=_ScanfSmall</arg>
+    </args>
+  </linkerExtraOptions>
+
+  <heaps>
+    <heap> <!-- If omitted, id="0" -->
+      <size>0</size>
+    </heap>
+    <heap id="1">
+      <size>0</size>
+    </heap>
+  </heaps>
+  <stacks>
+    <stack> <!-- If omitted, id="0" -->
+      <size>512</size>
+    </stack>
+  </stacks>
+
+
+  <files>
+    <group name="Source files">
+      <path copyTo="$PROJ_DIR$/system_msp432p401r.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/system_msp432p401r.c</path>
+      <path copyTo="$PROJ_DIR$/LcdDriver/Crystalfontz128x128_ST7735.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/LcdDriver/Crystalfontz128x128_ST7735.c</path>
+      <path copyTo="$PROJ_DIR$/LcdDriver/HAL_MSP_EXP432P401R_Crystalfontz128x128_ST7735.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/LcdDriver/HAL_MSP_EXP432P401R_Crystalfontz128x128_ST7735.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcm12.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcm12.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcm12b.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcm12b.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcm12i.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcm12i.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcm14.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcm14.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcm14b.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcm14b.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcm14i.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcm14i.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcm16.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcm16.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcm16b.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcm16b.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcm16i.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcm16i.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcm18.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcm18.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcm18b.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcm18b.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcm18i.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcm18i.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcm20.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcm20.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcm20b.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcm20b.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcm20i.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcm20i.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcm22.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcm22.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcm22b.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcm22b.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcm22i.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcm22i.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcm24.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcm24.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcm24b.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcm24b.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcm24i.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcm24i.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcm26.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcm26.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcm26b.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcm26b.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcm26i.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcm26i.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcm28.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcm28.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcm28b.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcm28b.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcm28i.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcm28i.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcm30.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcm30.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcm30b.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcm30b.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcm30i.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcm30i.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcm32.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcm32.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcm32b.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcm32b.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcm32i.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcm32i.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcm34.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcm34.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcm34b.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcm34b.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcm34i.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcm34i.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcm36.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcm36.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcm36b.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcm36b.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcm36i.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcm36i.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcm38.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcm38.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcm38b.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcm38b.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcm38i.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcm38i.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcm40.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcm40.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcm40b.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcm40b.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcm40i.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcm40i.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcm42.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcm42.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcm42b.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcm42b.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcm42i.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcm42i.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcm44.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcm44.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcm44b.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcm44b.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcm44i.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcm44i.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcm46.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcm46.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcm46b.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcm46b.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcm46i.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcm46i.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcm48.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcm48.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcm48b.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcm48b.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcm48i.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcm48i.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcmsc12.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcmsc12.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcmsc14.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcmsc14.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcmsc16.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcmsc16.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcmsc18.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcmsc18.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcmsc20.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcmsc20.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcmsc22.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcmsc22.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcmsc24.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcmsc24.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcmsc26.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcmsc26.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcmsc28.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcmsc28.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcmsc30.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcmsc30.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcmsc32.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcmsc32.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcmsc34.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcmsc34.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcmsc36.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcmsc36.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcmsc38.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcmsc38.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcmsc40.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcmsc40.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcmsc42.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcmsc42.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcmsc44.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcmsc44.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcmsc46.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcmsc46.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcmsc48.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcmsc48.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcmss12.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcmss12.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcmss12b.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcmss12b.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcmss12i.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcmss12i.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcmss14.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcmss14.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcmss14b.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcmss14b.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcmss14i.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcmss14i.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcmss16.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcmss16.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcmss16b.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcmss16b.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcmss16i.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcmss16i.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcmss18.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcmss18.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcmss18b.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcmss18b.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcmss18i.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcmss18i.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcmss20.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcmss20.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcmss20b.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcmss20b.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcmss20i.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcmss20i.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcmss22.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcmss22.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcmss22b.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcmss22b.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcmss22i.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcmss22i.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcmss24.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcmss24.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcmss24b.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcmss24b.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcmss24i.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcmss24i.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcmss26.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcmss26.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcmss26b.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcmss26b.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcmss26i.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcmss26i.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcmss28.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcmss28.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcmss28b.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcmss28b.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcmss28i.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcmss28i.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcmss30.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcmss30.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcmss30b.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcmss30b.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcmss30i.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcmss30i.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcmss32.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcmss32.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcmss32b.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcmss32b.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcmss32i.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcmss32i.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcmss34.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcmss34.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcmss34b.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcmss34b.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcmss34i.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcmss34i.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcmss36.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcmss36.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcmss36b.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcmss36b.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcmss36i.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcmss36i.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcmss38.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcmss38.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcmss38b.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcmss38b.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcmss38i.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcmss38i.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcmss40.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcmss40.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcmss40b.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcmss40b.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcmss40i.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcmss40i.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcmss42.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcmss42.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcmss42b.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcmss42b.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcmss42i.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcmss42i.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcmss44.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcmss44.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcmss44b.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcmss44b.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcmss44i.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcmss44i.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcmss46.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcmss46.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcmss46b.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcmss46b.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcmss46i.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcmss46i.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcmss48.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcmss48.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcmss48b.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcmss48b.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcmss48i.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcmss48i.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcmtt12.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcmtt12.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcmtt14.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcmtt14.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcmtt16.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcmtt16.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcmtt18.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcmtt18.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcmtt20.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcmtt20.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcmtt22.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcmtt22.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcmtt24.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcmtt24.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcmtt26.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcmtt26.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcmtt28.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcmtt28.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcmtt30.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcmtt30.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcmtt32.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcmtt32.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcmtt34.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcmtt34.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcmtt36.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcmtt36.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcmtt38.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcmtt38.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcmtt40.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcmtt40.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcmtt42.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcmtt42.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcmtt44.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcmtt44.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcmtt46.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcmtt46.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontcmtt48.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontcmtt48.c</path>
+      <path copyTo="$PROJ_DIR$/fonts/fontfixed6x8.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/fonts/fontfixed6x8.c</path>
+      <path copyTo="$PROJ_DIR$/iar/startup_msp432p401r_ewarm.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/iar/startup_msp432p401r_ewarm.c</path>
+      <path copyTo="$PROJ_DIR$/main.c">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/main.c</path>
+      <path copyTo="$PROJ_DIR$/$PROJ_FNAME$_msp432p401r.icf">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/iar/msp432p401r.icf</path>
+    </group>
+
+    <group name="Header files">
+      <path copyTo="$PROJ_DIR$/LcdDriver/Crystalfontz128x128_ST7735.h">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/LcdDriver/Crystalfontz128x128_ST7735.h</path>
+      <path copyTo="$PROJ_DIR$/LcdDriver/HAL_MSP_EXP432P401R_Crystalfontz128x128_ST7735.h">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/LcdDriver/HAL_MSP_EXP432P401R_Crystalfontz128x128_ST7735.h</path>
+    </group>
+
+    <group name="Documentation" build="false">
+      <path copyTo="$PROJ_DIR$/README.html">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/README.html</path>
+      <path copyTo="$PROJ_DIR$/README.md">$SIMPLELINK_MSP432_SDK_INSTALL_DIR$/examples/nortos/MSP_EXP432P401R/demos/boostxl_edumkii_accelerometer_msp432p401r/README.md</path>
+    </group>
+  </files>
+</iarProjectConnection>

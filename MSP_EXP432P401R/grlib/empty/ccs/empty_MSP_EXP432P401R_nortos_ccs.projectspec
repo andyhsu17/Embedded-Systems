@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectSpec>
+    <applicability>
+        <when>
+            <context
+                deviceFamily="MSP432"
+                deviceId="MSP432P401R"
+            />
+        </when>
+    </applicability>
+
+
+    <project
+        title="empty"
+        name="empty_MSP_EXP432P401R_nortos_ccs"
+        toolChain="TI"
+        connection="TIXDS110_Connection.xml"
+        device="MSP432P401R"
+        ignoreDefaultDeviceSettings="true"
+        products="com.ti.SIMPLELINK_MSP432_SDK"
+        compilerBuildOptions=" -I${PROJECT_ROOT} -I${COM_TI_SIMPLELINK_MSP432_SDK_INSTALL_DIR}/source -I${COM_TI_SIMPLELINK_MSP432_SDK_INSTALL_DIR}/source/third_party/CMSIS/Include -D__MSP432P401R__ -DDeviceFamily_MSP432P401x --advice:power=none --silicon_version=7M4 --code_state=16 --little_endian --display_error_number --diag_warning=255 --diag_wrap=off --gen_func_subsections=on --float_support=FPv4SPD16 --symdebug:dwarf"
+        linkerBuildOptions=" -l${COM_TI_SIMPLELINK_MSP432_SDK_INSTALL_DIR}/source/ti/grlib/ccs/grlib.lib -l${COM_TI_SIMPLELINK_MSP432_SDK_INSTALL_DIR}/source/ti/display/lib/display.aem4f -l${COM_TI_SIMPLELINK_MSP432_SDK_INSTALL_DIR}/source/ti/drivers/lib/drivers_msp432p401x.aem4f -l${COM_TI_SIMPLELINK_MSP432_SDK_INSTALL_DIR}/source/third_party/fatfs/lib/fatfs.aem4f --stack_size=512 -l${COM_TI_SIMPLELINK_MSP432_SDK_INSTALL_DIR}/source/ti/devices/msp432p4xx/driverlib/ccs/msp432p4xx_driverlib.lib --warn_sections --display_error_number --diag_wrap=off --rom_model"
+        description="TODO: Write description">
+
+        <property name="buildProfile" value="release"/>
+        <property name="isHybrid" value="true"/>
+        <group id="empty.SIMPLELINK_MSP432_SDK.MSP_EXP432P401R.grlib.TI"/>
+        <file path="../system_msp432p401r.c" openOnCreation="false" excludeFromBuild="false" action="copy">
+        </file>
+        <file path="../fonts/fontcm12.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcm12b.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcm12i.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcm14.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcm14b.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcm14i.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcm16.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcm16b.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcm16i.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcm18.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcm18b.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcm18i.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcm20.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcm20b.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcm20i.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcm22.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcm22b.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcm22i.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcm24.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcm24b.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcm24i.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcm26.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcm26b.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcm26i.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcm28.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcm28b.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcm28i.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcm30.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcm30b.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcm30i.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcm32.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcm32b.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcm32i.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcm34.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcm34b.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcm34i.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcm36.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcm36b.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcm36i.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcm38.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcm38b.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcm38i.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcm40.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcm40b.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcm40i.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcm42.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcm42b.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcm42i.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcm44.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcm44b.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcm44i.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcm46.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcm46b.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcm46i.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcm48.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcm48b.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcm48i.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcmsc12.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcmsc14.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcmsc16.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcmsc18.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcmsc20.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcmsc22.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcmsc24.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcmsc26.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcmsc28.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcmsc30.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcmsc32.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcmsc34.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcmsc36.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcmsc38.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcmsc40.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcmsc42.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcmsc44.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcmsc46.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcmsc48.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcmss12.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcmss12b.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcmss12i.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcmss14.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcmss14b.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcmss14i.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcmss16.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcmss16b.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcmss16i.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcmss18.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcmss18b.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcmss18i.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcmss20.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcmss20b.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcmss20i.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcmss22.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcmss22b.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcmss22i.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcmss24.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcmss24b.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcmss24i.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcmss26.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcmss26b.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcmss26i.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcmss28.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcmss28b.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcmss28i.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcmss30.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcmss30b.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcmss30i.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcmss32.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcmss32b.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcmss32i.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcmss34.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcmss34b.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcmss34i.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcmss36.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcmss36b.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcmss36i.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcmss38.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcmss38b.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcmss38i.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcmss40.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcmss40b.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcmss40i.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcmss42.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcmss42b.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcmss42i.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcmss44.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcmss44b.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcmss44i.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcmss46.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcmss46b.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcmss46i.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcmss48.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcmss48b.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcmss48i.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcmtt12.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcmtt14.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcmtt16.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcmtt18.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcmtt20.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcmtt22.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcmtt24.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcmtt26.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcmtt28.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcmtt30.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcmtt32.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcmtt34.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcmtt36.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcmtt38.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcmtt40.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcmtt42.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcmtt44.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcmtt46.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontcmtt48.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../fonts/fontfixed6x8.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="fonts">
+        </file>
+        <file path="../LcdDriver/Template_Driver.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="LcdDriver">
+        </file>
+        <file path="../LcdDriver/Template_Driver.h" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="LcdDriver">
+        </file>
+        <file path="../images/images.h" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="images">
+        </file>
+        <file path="../ccs/startup_msp432p401r_ccs.c" openOnCreation="false" excludeFromBuild="false" action="copy" targetDirectory="ccs">
+        </file>
+        <file path="../ccs/msp432p401r.cmd" openOnCreation="false" excludeFromBuild="false" action="copy">
+        </file>
+        <file path="../main.c" openOnCreation="false" excludeFromBuild="false" action="copy">
+        </file>
+    </project>
+</projectSpec>
+

@@ -1,0 +1,5 @@
+# FIXED
+
+driverlib/resetctl_software_initiated_reset/resetctl_software_initiated_reset.obj: ../driverlib/resetctl_software_initiated_reset/resetctl_software_initiated_reset.c
+
+../driverlib/resetctl_software_initiated_reset/resetctl_software_initiated_reset.c: 

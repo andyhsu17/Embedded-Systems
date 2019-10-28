@@ -1,0 +1,5 @@
+# FIXED
+
+driverlib/adc14_single_channel_external_reference/adc14_single_channel_external_reference.obj: ../driverlib/adc14_single_channel_external_reference/adc14_single_channel_external_reference.c
+
+../driverlib/adc14_single_channel_external_reference/adc14_single_channel_external_reference.c: 

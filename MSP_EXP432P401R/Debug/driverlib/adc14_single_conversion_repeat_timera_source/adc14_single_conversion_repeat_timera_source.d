@@ -1,0 +1,5 @@
+# FIXED
+
+driverlib/adc14_single_conversion_repeat_timera_source/adc14_single_conversion_repeat_timera_source.obj: ../driverlib/adc14_single_conversion_repeat_timera_source/adc14_single_conversion_repeat_timera_source.c
+
+../driverlib/adc14_single_conversion_repeat_timera_source/adc14_single_conversion_repeat_timera_source.c: 

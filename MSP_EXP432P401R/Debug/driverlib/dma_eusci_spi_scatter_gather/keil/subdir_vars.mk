@@ -1,0 +1,24 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+# Add inputs and outputs from these tool invocations to the build variables 
+S_SRCS += \
+../driverlib/dma_eusci_spi_scatter_gather/keil/startup_msp432p401r_uvision.s 
+
+S_DEPS += \
+./driverlib/dma_eusci_spi_scatter_gather/keil/startup_msp432p401r_uvision.d 
+
+OBJS += \
+./driverlib/dma_eusci_spi_scatter_gather/keil/startup_msp432p401r_uvision.obj 
+
+OBJS__QUOTED += \
+"driverlib/dma_eusci_spi_scatter_gather/keil/startup_msp432p401r_uvision.obj" 
+
+S_DEPS__QUOTED += \
+"driverlib/dma_eusci_spi_scatter_gather/keil/startup_msp432p401r_uvision.d" 
+
+S_SRCS__QUOTED += \
+"../driverlib/dma_eusci_spi_scatter_gather/keil/startup_msp432p401r_uvision.s" 
+
+

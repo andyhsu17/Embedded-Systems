@@ -1,0 +1,5 @@
+# FIXED
+
+driverlib/adc14_single_channel_temperature_sensor/adc14_single_channel_temperature_sensor.obj: ../driverlib/adc14_single_channel_temperature_sensor/adc14_single_channel_temperature_sensor.c
+
+../driverlib/adc14_single_channel_temperature_sensor/adc14_single_channel_temperature_sensor.c: 

@@ -1,0 +1,5 @@
+# FIXED
+
+driverlib/timer_a_continuous_vlo_period_capture/timer_a_continuous_vlo_period_capture.obj: ../driverlib/timer_a_continuous_vlo_period_capture/timer_a_continuous_vlo_period_capture.c
+
+../driverlib/timer_a_continuous_vlo_period_capture/timer_a_continuous_vlo_period_capture.c: 

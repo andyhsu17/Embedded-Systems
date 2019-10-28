@@ -1,0 +1,5 @@
+# FIXED
+
+driverlib/comp_e_output_toggle_vcomp_vrefhalfvcc/comp_e_output_toggle_Vcomp_VrefHalfVcc.obj: ../driverlib/comp_e_output_toggle_vcomp_vrefhalfvcc/comp_e_output_toggle_Vcomp_VrefHalfVcc.c
+
+../driverlib/comp_e_output_toggle_vcomp_vrefhalfvcc/comp_e_output_toggle_Vcomp_VrefHalfVcc.c: 

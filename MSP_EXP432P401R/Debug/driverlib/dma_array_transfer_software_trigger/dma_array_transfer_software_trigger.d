@@ -1,0 +1,5 @@
+# FIXED
+
+driverlib/dma_array_transfer_software_trigger/dma_array_transfer_software_trigger.obj: ../driverlib/dma_array_transfer_software_trigger/dma_array_transfer_software_trigger.c
+
+../driverlib/dma_array_transfer_software_trigger/dma_array_transfer_software_trigger.c: 
